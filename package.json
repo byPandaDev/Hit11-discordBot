@@ -1,0 +1,19 @@
+{
+  "name": "classbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "scripts": {
+    "start": "node js/index.js",
+    "dev": "nodemon src/index.ts",
+    "postinstall": "tsc"
+  },
+  "author": "byPandaDev",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.9.2",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19",
+    "wokcommands": "^1.5.3"
+  }
+}
