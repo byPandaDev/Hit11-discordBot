@@ -10,6 +10,7 @@ const client = new DiscordJS.Client({
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MESSAGES,
         Intents.FLAGS.GUILD_MEMBERS,
+        Intents.FLAGS.GUILD_VOICE_STATES,
     ]
 })
 
@@ -29,7 +30,7 @@ client.on("ready", async () => {
     new WOKCommands(client, {
         commandDir: path.join(__dirname, "commands"),
         featureDir: path.join(__dirname, "features"),
-        typeScript: false,
+        typeScript: true,
         testServers: ["1009065402611007498"], 
         /* mongoUri: process.env.MONGOOSE_URI,
         dbOptions: {
